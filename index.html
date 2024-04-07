@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="title1">   
+            AioRelaxer
+        </div>
+
+        <div class="main">
+
+            <div class="main2">
+                <div id="circle" class="circle">
+                    <div class="circle2">
+                        <span id="text1" class="text1">
+                            Aiolearn!
+                        </span>
+                    </div>
+                </div>
+
+                <div class="pointer">
+                    <div class="maah">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            const text = document.getElementById("text1");
+            const circle = document.getElementById("circle");
+
+            dam();
+
+            function dam(){
+                text1.innerText='Breathe In!';
+                circle.className=' circle dam';
+
+                setTimeout(() => {
+                    hold();
+                }, 2000);
+            }
+
+            function hold(){
+                text1.innerText='HOLD!';
+                circle.className=' circle hold';
+
+                setTimeout(() => {
+                    bazdam();
+                }, 1000);
+            }
+
+            function bazdam(){
+                text1.innerText='Breathe Out!';
+                circle.className=' circle bazdam';
+
+                setTimeout(() => {
+                    dam();
+                }, 2000);
+            }
+        </script>
+    </body>
+</html>

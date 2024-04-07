@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+
+body{
+    background: url('img/bg.jpg');
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+}
+
+.title1{
+width: 100%;
+margin-top: 40px;
+text-align: center;
+font-family: 'Montserrat','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: 30px;
+font-weight: bold;
+color: white;
+}
+
+
+
+.main{
+    width: 100%;
+    height: 300px; 
+    text-align: center;
+    display: flex;
+    margin: auto;
+
+}
+
+
+.circle{
+    background: conic-gradient(rgb(0, 204, 204) 0%,
+    rgb(0, 177, 201) 40%,
+    rgb(255, 255, 255) 40%,
+    rgb(255, 255, 255) 60%,
+    rgb(0, 168, 76) 60%,
+    rgb(0, 175, 93) 100%
+    );
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    margin: auto;
+    align-items: center;
+    display: flex;
+    color: white;
+    font-family: 'Montserrat','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+
+}
+
+
+.circle2{
+    background-color: rgb(14, 0, 41);
+    width: 280px;
+    height: 280px;
+    border-radius: 100%;
+    margin: auto;
+    align-items: center;
+    display: flex;
+    color: white;
+    font-family: 'Montserrat','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center; 
+
+}
+
+
+.text1{
+    width: 100%;
+    text-align: center;
+}
+
+
+.main2{
+    width: 320px;
+    height: 320px; 
+    
+    display: flex;
+    margin: auto;
+}
+
+
+.pointer{ 
+    width: 320px;
+    height: 320px;
+    position: absolute; 
+    animation: charkhesh 5s linear infinite; 
+    transform: rotate(45deg);
+
+}
+
+
+.maah{
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    position: absolute;
+    border-radius: 100%;
+
+}
+
+.dam{
+    
+    animation: step1 5s linear infinite;
+}
+
+
+.hold{
+    
+    transform: scale(1.2);    
+}
+
+
+
+.bazdam{
+    animation: step2 5s linear infinite;
+}
+
+
+@keyframes charkhesh {
+
+    from{
+        transform: rotate(45deg)
+    }
+
+    to{
+         transform: rotate( 405deg) 
+    }
+    
+}
+
+
+@keyframes step1 {
+    from{
+        transform: scale(1);
+    }
+
+    to{
+         transform: scale(1.5); 
+    }
+}
+
+
+@keyframes step2 {
+    from{
+        transform: scale(1.2);
+    }
+
+    to{
+         transform: scale(0.7); 
+    }
+}
